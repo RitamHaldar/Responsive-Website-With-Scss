@@ -5,7 +5,6 @@
 }
 
 html, body {
-  height: 100%;
   width: 100%;
   background-color: #121212;
 }
@@ -14,10 +13,31 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.7rem 1rem;
+}
+.nav button {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.2rem;
+  background-color: #1E1E1E;
+  color: #F4F2ED;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
 }
 .nav .options {
   display: flex;
+  gap: 0.5rem;
+}
+.nav .options .get-in-touch {
+  background-color: #CEBD63;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
 }
 .nav .options .cart {
   display: flex;
@@ -59,7 +79,6 @@ html, body {
 }
 
 .main {
-  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -132,15 +151,294 @@ html, body {
   text-transform: uppercase;
 }
 
+.main2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.main2 .achivements {
+  padding: 0 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.main2 .achivements .clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #99988D;
+  font-size: 1rem;
+}
+.main2 .achivements .clients span {
+  margin-top: 0.7rem;
+  margin-bottom: 1.5rem;
+  color: white;
+  font-size: 2.4rem;
+}
+.main2 .achivements .projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #99988D;
+  font-size: 1rem;
+}
+.main2 .achivements .projects span {
+  margin-top: 0.7rem;
+  margin-bottom: 1.5rem;
+  color: white;
+  font-size: 2.4rem;
+}
+.main2 .achivements .happyclients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #99988D;
+  font-size: 1rem;
+}
+.main2 .achivements .happyclients span {
+  margin-top: 0.7rem;
+  margin-bottom: 1.5rem;
+  color: white;
+  font-size: 2.4rem;
+}
+.main2 .achivements .follower {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #99988D;
+  font-size: 1rem;
+}
+.main2 .achivements .follower span {
+  margin-top: 0.7rem;
+  margin-bottom: 1.5rem;
+  color: white;
+  font-size: 2.4rem;
+}
+
+.main3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1.3rem;
+}
+.main3 .image {
+  display: flex;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.main3 .image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.main3 .details {
+  background-color: #1E1E1E;
+  padding: 2.3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+  border-radius: 0.5rem;
+}
+.main3 .details h3 {
+  color: #F4F2ED;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+.main3 .details .detail h1 {
+  color: #F4F2ED;
+  font-weight: 100;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
+.main3 .details .detail p {
+  font-size: 1.2rem;
+  color: #989794;
+  line-height: 1.7rem;
+}
+
+.main4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1.3rem;
+}
+.main4 .image {
+  display: flex;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.main4 .image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.main4 .details {
+  background-color: #1E1E1E;
+  padding: 2.3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+  border-radius: 0.5rem;
+}
+.main4 .details h3 {
+  color: #F4F2ED;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+.main4 .details .detail h1 {
+  color: #F4F2ED;
+  font-weight: 100;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
+.main4 .details .detail p {
+  font-size: 1.2rem;
+  color: #989794;
+  line-height: 1.7rem;
+}
+
+.main5 {
+  width: 100%;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+.main5 .images {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main5 .images img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 0.5rem;
+}
+.main5 h1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 1rem;
+  color: #F4F2ED;
+  font-size: 2.8rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  padding-right: 1rem;
+}
+.main5 h1 span {
+  font-size: 1rem;
+}
+.main5 h1 span button {
+  font-size: 1.1rem;
+  padding: 0.7rem;
+  border-radius: 50%;
+  border: none;
+  background-color: #1E1E1E;
+  color: #F4F2ED;
+  margin-right: 0.6rem;
+}
+
+@media (min-width: 479px) {
+  .nav .options .get-in-touch {
+    display: flex;
+  }
+  .main3 .details {
+    gap: 7rem;
+  }
+  .main4 .details {
+    gap: 7rem;
+  }
+}
+@media (min-width: 767px) {
+  .main5 .images {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .main5 .images img {
+    width: 48%;
+  }
+}
 @media (min-width: 991px) {
+  .nav button {
+    display: flex;
+  }
+  .nav .options .menu {
+    display: none;
+  }
   .main {
     flex-direction: row;
   }
   .main .content {
     justify-content: space-between;
-    padding: 4rem !important;
+    padding: 4rem;
   }
   .main .content .details h1 {
-    font-size: 4.2rem !important;
+    font-size: 4.2rem;
+  }
+  .main2 .achivements {
+    padding: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main3 {
+    flex-direction: row-reverse;
+  }
+  .main3 .details {
+    padding: 4rem;
+    width: 50%;
+    gap: 10rem;
+  }
+  .main3 .details .detail h1 {
+    font-size: 3rem;
+  }
+  .main3 .details .detail p {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  .main3 .image {
+    width: 50%;
+  }
+  .main4 {
+    flex-direction: row;
+  }
+  .main4 .details {
+    padding: 4rem;
+    width: 50%;
+    gap: 10rem;
+  }
+  .main4 .details .detail h1 {
+    font-size: 3rem;
+  }
+  .main4 .details .detail p {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  .main4 .image {
+    width: 50%;
+  }
+  .main5 .images {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .main5 .images img {
+    width: 32.54%;
   }
 }/*# sourceMappingURL=style.css.map */
